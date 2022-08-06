@@ -1,0 +1,202 @@
+{
+  "quizzes": {
+    "0": {
+      "id": 0,
+      "title": "Front End",
+      "description": "Some questions about the front end (client-side) development for begginers.",
+      "questions": [
+        {
+          "id": 0,
+          "text": "the first thing to learn in the field of front end development",
+          "answers": [
+            {
+              "id": 0,
+              "text": "CSS"
+            },
+            {
+              "id": 1,
+              "text": "HTML"
+            },
+            {
+              "id": 2,
+              "text": "JavaScript"
+            },
+            {
+              "id": 3,
+              "text": "React Framework"
+            }
+          ],
+          "rightAnswer": 1
+        },
+        {
+          "id": 1,
+          "text": "I've finished HTML, CSS & JS... Now I should learn",
+          "answers": [
+            {
+              "id": 0,
+              "text": "React"
+            },
+            {
+              "id": 1,
+              "text": "Angular"
+            },
+            {
+              "id": 2,
+              "text": "PHP"
+            },
+            {
+              "id": 3,
+              "text": "Any Framework"
+            }
+          ],
+          "rightAnswer": 3
+        },
+        {
+          "id": 2,
+          "text": "TypeScript is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "Essential"
+            },
+            {
+              "id": 1,
+              "text": "Not important"
+            },
+            {
+              "id": 2,
+              "text": "Useful"
+            },
+            {
+              "id": 3,
+              "text": "Same as JS"
+            }
+          ],
+          "rightAnswer": 2
+        },
+        {
+          "id": 3,
+          "text": "The most known front end framework is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "Angular"
+            },
+            {
+              "id": 1,
+              "text": "Vue"
+            },
+            {
+              "id": 2,
+              "text": "React"
+            },
+            {
+              "id": 3,
+              "text": "Bootstrap"
+            }
+          ],
+          "rightAnswer": 2
+        }
+      ]
+    },
+    "1": {
+      "id": 1,
+      "title": "Back End",
+      "description": "Some questions about the back end (server-side) development for begginers.",
+      "questions": [
+        {
+          "id": 0,
+          "text": "the first thing to learn in the field of back end development",
+          "answers": [
+            {
+              "id": 0,
+              "text": "PHP"
+            },
+            {
+              "id": 1,
+              "text": "Ruby"
+            },
+            {
+              "id": 2,
+              "text": "JavaScript"
+            },
+            {
+              "id": 3,
+              "text": "can be any of them"
+            }
+          ],
+          "rightAnswer": 3
+        },
+        {
+          "id": 1,
+          "text": "I've finished PHP & SQL... Now I should learn",
+          "answers": [
+            {
+              "id": 0,
+              "text": "Laravel"
+            },
+            {
+              "id": 1,
+              "text": "Wordpress"
+            },
+            {
+              "id": 2,
+              "text": "Nothing"
+            },
+            {
+              "id": 3,
+              "text": "A or B"
+            }
+          ],
+          "rightAnswer": 3
+        },
+        {
+          "id": 2,
+          "text": "A good knowledge about networking is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "Essential"
+            },
+            {
+              "id": 1,
+              "text": "Not important"
+            },
+            {
+              "id": 2,
+              "text": "Useful"
+            },
+            {
+              "id": 3,
+              "text": "Same as JS"
+            }
+          ],
+          "rightAnswer": 0
+        },
+        {
+          "id": 3,
+          "text": "The most known back end framework is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "Wordpress"
+            },
+            {
+              "id": 1,
+              "text": "laravel"
+            },
+            {
+              "id": 2,
+              "text": "mySQL"
+            },
+            {
+              "id": 3,
+              "text": "phpmyadmin"
+            }
+          ],
+          "rightAnswer": 0
+        }
+      ]
+    }
+  }
+}

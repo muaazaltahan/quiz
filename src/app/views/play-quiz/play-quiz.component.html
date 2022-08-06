@@ -1,0 +1,20 @@
+<ng-container *ngIf="quiz | async as _quiz">
+  <div class="container">
+    <div class="row"><h2>Quiz: {{_quiz.title}}</h2><span>{{_quiz.questions.length}} Questions</span></div>
+    <div class="row"><h4>{{_quiz.description}}</h4></div>
+    <div class="row">
+      <span class="fs-4">are you ready?</span>
+      <div class="btn btn-success" (click)="started = true">Let's Go!</div>
+    </div>
+    <ng-container *ngIf="started">
+      <div class="row" *ngFor="let question of _quiz.questions">
+        <div class="fs-3 text-success">{{question.text}}</div>
+        <div class="d-flex col-12 justify-content-between align-items-center">
+          <div class="btn btn-light" *ngFor="let answer of question.answers">
+            {{answer.text}}
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
