@@ -13,7 +13,7 @@ export class PlayQuizEffects {
 
   loadQuizById$ = createEffect(() => this.actions$.pipe(
     ofType(playQuizActions.Types.load),
-    mergeMap((id)=>this.http.get(`http:localhost:3000/quizzes/${id}`).pipe(
+    mergeMap((props: {quizId: number})=>this.http.get(`http://localhost:3000/quizzes/${props.quizId}`).pipe(
       map(quiz => ({type: playQuizActions.Types.set, quiz})),
       catchError(err => {
         this.router.navigate(['/**']);

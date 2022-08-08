@@ -9,7 +9,7 @@ export class Question {
   id: string;
   text: string;
   answers?: Answer[];
-  rightAnswer: string | number;
+  rightAnswer: number;
 }
 
 export class Answer {

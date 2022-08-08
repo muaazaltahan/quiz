@@ -8,7 +8,7 @@ export enum Types {
   loadFailure = '[PlayQuiz] load failure'
 }
 
-export const set = createAction(Types.set,props<{quiz: Quiz}>());
 
 export const load = createAction(Types.load, props<{quizId: number}>());
+export const set = createAction(Types.set,props<{quiz: Quiz}>());
 export const loadFailure = createAction(Types.loadFailure, props<{error: any}>());

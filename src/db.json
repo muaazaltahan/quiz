@@ -1,6 +1,6 @@
 {
-  "quizzes": {
-    "0": {
+  "quizzes": [
+    {
       "id": 0,
       "title": "Front End",
       "description": "Some questions about the front end (client-side) development for begginers.",
@@ -99,7 +99,7 @@
         }
       ]
     },
-    "1": {
+    {
       "id": 1,
       "title": "Back End",
       "description": "Some questions about the back end (server-side) development for begginers.",
@@ -198,5 +198,5 @@
         }
       ]
     }
-  }
+  ]
 }

@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { concatMap, map, Observable, Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { Quiz } from 'src/app/models/models';
 import { load } from 'src/app/state/play-quiz/play-quiz.actions';
 import { playQuiz } from 'src/app/state/play-quiz/play-quiz.reducer';
@@ -19,35 +19,18 @@ export class PlayQuizComponent implements OnInit, OnDestroy {
   constructor(private store: Store<QuizzesState>, private activatedRoute: ActivatedRoute) { }
 
   quiz: Observable<Quiz> = this.store.select(playQuiz);
-  quizByIdSub: Subscription;
+  quizSub: Subscription;
 
   ngOnInit(): void {
-    this.quizByIdSub = this.activatedRoute.params.pipe(
-      concatMap((params)=>this.quiz.pipe(
-        map(quiz => {
-          let idParam = params['quizId'];
-          if(quiz.id == idParam){
-            return false;
-          } else {
-            return {quiz,idParam};
-          }
-        })
-      ))
-    ).subscribe((result)=>{
-      if(result != false){
-        this.store.dispatch(load({quizId: result.idParam}))
+    this.quizSub = this.quiz.subscribe(res => {
+      const quizId = this.activatedRoute.snapshot.paramMap.get('quizId');
+      if(res.id != parseInt(quizId)){
+        this.store.dispatch(load({quizId: parseInt(quizId)}));
       }
-    })
+    });
   }
 
   ngOnDestroy(): void {
-    this.quizByIdSub.unsubscribe();
+    this.quizSub.unsubscribe();
   }
-
 }
-
-//       if (quiz.id != idParam) {
-//         this.quizByIdSub = this.store.select(quizById(idParam)).subscribe(quiz => {
-//           this.store.dispatch(set({ quiz }));
-//         })
-//       }
