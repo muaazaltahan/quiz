@@ -2,7 +2,7 @@
   "quizzes": [
     {
       "id": 0,
-      "title": "Front End",
+      "title": "Front End Begginer Quiz",
       "description": "Some questions about the front end (client-side) development for begginers.",
       "questions": [
         {
@@ -69,7 +69,7 @@
             },
             {
               "id": 3,
-              "text": "Same as JS"
+              "text": "Not Required"
             }
           ],
           "rightAnswer": 2
@@ -101,7 +101,7 @@
     },
     {
       "id": 1,
-      "title": "Back End",
+      "title": "Back End Begginer Quiz",
       "description": "Some questions about the back end (server-side) development for begginers.",
       "questions": [
         {

@@ -1,4 +1,10 @@
-# Quiz
+# Angular Quiz Web App
+
+This is a simple quiz web application made using angular framework  
+the project is simply a couple of quizzes  
+I hope that you notify me on any bugs or improvements  
+[contact me at telegram](https://t.me/muaazaltahan)  
+or at this email almuaaz559@gmail.com  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 

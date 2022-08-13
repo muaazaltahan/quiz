@@ -1,0 +1,15 @@
+<ng-container *ngIf="quiz | async as _quiz">
+  <div *ngIf="count > 0" class="vh-100 vw-100 d-flex align-items-center justify-content-center position-fixed top-0 start-0 bg-secondary">
+    <h1 class="count">{{count}}</h1>
+  </div>
+  <div class="container p-3">
+    <div class="row mb-2">
+      <h2>{{_quiz.title}}</h2>
+    </div>
+    <app-question *ngFor="let q of _quiz.questions" [question]="q" [isFinished]="isFinished" (solveQuestion)="addSolvedQuestion($event)"></app-question>
+    <div class="row mt-5">
+      <button class="btn btn-danger" (click)="finishQuiz(_quiz.title,_quiz.questions.length,_quiz.id+1)">Done</button>
+    </div>
+  </div>
+  <div class="position-fixed bottom-0 start-0 text-center bg-secondary text-light fs-4" style="width: 100px;">{{timer | numberToTime}}</div>
+</ng-container>

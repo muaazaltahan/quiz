@@ -1,0 +1,23 @@
+<div class="container">
+  <div mat-dialog-title>
+    Your Result In {{data.quizTitle}}
+  </div>
+  <div mat-dialog-content>
+    <div class="p-2 fs-4">
+      Quiz Questions: {{data.questions.count}}
+    </div>
+    <div class="p-2 fs-4">
+      Solved Questions: {{data.questions.solved.right}}
+    </div>
+    <div class="p-2 fs-4">
+      Mistakes: {{data.questions.solved.wrong}}
+    </div>
+    <div class="p-2 fs-4">
+      time: {{data.time | numberToTime}}
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button class="btn btn-success" mat-dialog-close [routerLink]="['/quiz/' + data.nextQuiz]">Next</button>
+    <button class="btn btn-outline-danger ms-3" mat-dialog-close>Home Page</button>
+  </div>
+</div>

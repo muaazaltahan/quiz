@@ -14,8 +14,6 @@ import { QuizzesState } from 'src/app/state/quizzes/quizzes.reducer';
 })
 export class PlayQuizComponent implements OnInit, OnDestroy {
 
-  started: boolean = false;
-
   constructor(private store: Store<QuizzesState>, private activatedRoute: ActivatedRoute) { }
 
   quiz: Observable<Quiz> = this.store.select(playQuiz);

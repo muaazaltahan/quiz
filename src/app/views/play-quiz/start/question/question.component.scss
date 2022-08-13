@@ -1,0 +1,19 @@
+.answer{
+  border: 1px solid #fff;
+  &:hover{
+    background-color: #eee;
+  }
+  &.selected {
+    background-color: #201987;
+    box-shadow: #201987 1px 1px 5px 5px;
+    color: #fff;
+  }
+  &.right {
+    background-color: #198754;
+    color: #fff;
+  }
+  &.false {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
