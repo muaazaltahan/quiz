@@ -197,6 +197,105 @@
           "rightAnswer": 0
         }
       ]
+    },
+    {
+      "id": 2,
+      "title":"Database Begginer Quiz",
+      "description":"Some questions about the database (storing data) design for begginers.",
+      "questions": [
+        {
+          "id": 0,
+          "text": "The first thing to do when you create a web application is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "User Interface"
+            },
+            {
+              "id": 1,
+              "text": "Database"
+            },
+            {
+              "id": 2,
+              "text": "A or B"
+            },
+            {
+              "id": 3,
+              "text": "API"
+            }
+          ],
+          "rightAnswer": 1
+        },
+        {
+          "id": 1,
+          "text": "The Database contains",
+          "answers": [
+            {
+              "id": 0,
+              "text": "clients data"
+            },
+            {
+              "id": 1,
+              "text": "admins data"
+            },
+            {
+              "id": 2,
+              "text": "A or B"
+            },
+            {
+              "id": 3,
+              "text": "A & B"
+            }
+          ],
+          "rightAnswer": 3
+        },
+        {
+          "id": 2,
+          "text": "If there is not a database designer, the expected one to create the database is",
+          "answers": [
+            {
+              "id": 0,
+              "text": "back end developer"
+            },
+            {
+              "id": 1,
+              "text": "Front end developer"
+            },
+            {
+              "id": 2,
+              "text": "A or B"
+            },
+            {
+              "id": 3,
+              "text": "User interface designer"
+            }
+          ],
+          "rightAnswer": 0
+        },
+        {
+          "id": 2,
+          "text": "When I learn database design I should learn",
+          "answers": [
+            {
+              "id": 0,
+              "text": "SQL"
+            },
+            {
+              "id": 1,
+              "text": "MySQL"
+            },
+            {
+              "id": 2,
+              "text": "NoSQL"
+            },
+            {
+              "id": 3,
+              "text": "all of them"
+            }
+          ],
+          "rightAnswer": 3
+        }
+      ]
     }
   ]
 }
