@@ -11,6 +11,7 @@ import { HomeModule } from './views/home/home.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { PlayQuizModule } from './views/play-quiz/play-quiz.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PlayQuizModule } from './views/play-quiz/play-quiz.module';
     BrowserAnimationsModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     HomeModule,
-    PlayQuizModule
+    PlayQuizModule,
+    FontAwesomeModule
   ],
   bootstrap: [AppComponent]
 })

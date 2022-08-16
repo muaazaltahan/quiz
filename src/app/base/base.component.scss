@@ -1,0 +1,6 @@
+.global-link {
+  color: #5c4242;
+  &.active-route {
+    color: #f84848;
+  }
+}

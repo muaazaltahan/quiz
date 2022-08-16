@@ -1,3 +1,11 @@
+<div>
+  <a class="p-2 global-link" routerLink="/" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact : true}">
+    <fa-icon [icon]="home" size="2x"></fa-icon>
+  </a>
+  <a class="p-2 global-link" routerLink="about" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact : true}">
+    <fa-icon [icon]="about" size="2x"></fa-icon>
+  </a>
+</div>
 <div class="main-layout">
   <router-outlet></router-outlet>
 </div>
